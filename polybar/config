@@ -15,6 +15,24 @@
 ;   \____\___/|_____\___/|_| \_\____/ 
                                     
 [colors]
+#background = #282e3a
+#background-alt = #d1c4e99
+#foreground = #e5e9f0
+#foreground-alt = #282e3a
+#primary = #ffb52a
+#secondary = #e60053
+#alert = #B48EAD
+#
+#cyan = #63C5EA
+#aqua = #8FBCBB
+#red = #FA5AA4
+#yellow = #EBCB8B
+#green = #2BE491
+#orange = #D08770
+#magenta = #CF8EF4
+#white = #F9F9F9
+#pink = #FA5AA4
+#blue = #81a1c1
 background = #282e3a
 background-alt = #d1c4e99
 foreground = #e5e9f0
@@ -23,15 +41,15 @@ primary = #ffb52a
 secondary = #e60053
 alert = #B48EAD
 
-cyan = #63C5EA
+cyan = #88C0D0
 aqua = #8FBCBB
-red = #FA5AA4
+red = #BF616A
 yellow = #EBCB8B
-green = #2BE491
+green = #A3BE8C
 orange = #D08770
-magenta = #CF8EF4
-white = #F9F9F9
-pink = #FA5AA4
+magenta = #BF616A
+white = #D8DEE9
+pink = #c394b4
 blue = #81a1c1
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -56,10 +74,15 @@ module-margin-left = 1
 module-margin-right = 1
 
 font-0 = "Inconsolata CondensedBlack:size=10;3"
-font-1 = "SauceCodePro Nerd Font Mono:size=18;5"
-font-2 = "Material Icons:pixelsize=13;5"
-font-3 = "Sinji:pixelsize=13;5"
-font-4 = "Togalite medium:pixelsize=10;4"
+font-1 = "SauceCodePro Nerd Font Mono:size=19;5"
+font-2 = "Material Icons:pixelsize=14;5"
+font-3 = "Sinji:pixelsize=14;5"
+font-4 = "Togalite medium:pixelsize=11;4"
+#font-0 = "Inconsolata CondensedBlack:size=10;3"
+#font-1 = "SauceCodePro Nerd Font Mono:size=18;5"
+#font-2 = "Material Icons:pixelsize=13;5"
+#font-3 = "Sinji:pixelsize=13;5"
+#font-4 = "Togalite medium:pixelsize=10;4"
 
 ; MODULES SETUP
 modules-left = bspwm theme-swap
@@ -80,26 +103,26 @@ cursor-scroll = pointer
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = %name%
+label-focused = 﫵
 label-focused-background = ${colors.pink}
 label-focused-underline= ${colors.primary}
 label-focused-foreground = ${colors.foreground-alt}
-label-focused-padding = 2
+label-focused-padding = 1
 
-label-occupied = %name%
+label-occupied =  
 label-occupied-background = ${colors.background}
 label-occupied-foreground = #e5e9f0
-label-occupied-padding = 2
+label-occupied-padding = 1
 
-label-urgent = %name%
+label-urgent = 﫵
 label-urgent-background = ${colors.magenta}
 label-urgent-foreground = #e5e9f0
-label-urgent-padding = 2
+label-urgent-padding = 1
 
-label-empty = %name% 
+label-empty =  
 label-empty-background = ${colors.background}
 label-empty-foreground = #e5e9f0
-label-empty-padding = 2
+label-empty-padding = 1
 
 ; Separator in between workspaces
 label-separator = 
