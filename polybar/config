@@ -85,9 +85,9 @@ font-4 = "Togalite medium:pixelsize=11;4"
 #font-4 = "Togalite medium:pixelsize=10;4"
 
 ; MODULES SETUP
-modules-left = bspwm theme-swap
+modules-left = theme-swap bspwm
 modules-center = windowtitle spotify
-modules-right = battery filesystem cpu memory volume date shutdown tray
+modules-right =  battery filesystem cpu memory volume date shutdown tray
 
 enable-ipc = true
 
@@ -219,14 +219,14 @@ label-empty-background = ${colors.background}
 
 [module/theme-swap]
 type = custom/script
-exec = echo 
+exec = echo 
 interval = 100
 label = "  %output%  "
 
-format-background = ${colors.white}
+format-background = ${colors.pink}
 format-foreground = ${colors.background}
 
-click-left = ~/.scripts/theme-swap/theme-swap.sh -r
+# click-left = ~/.scripts/theme-swap/theme-swap.sh -r
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 [module/filesystem]
@@ -284,8 +284,8 @@ interval = 1000
 label = "   %output%  "
 format-foreground = ${colors.background}
 format-background = ${colors.green}
-click-left = kitty -e $SHELL -c 'sudo pacman -Syu'
-click-right = bspc rule -a \* -o state=floating ; sleep 0.015 ; kitty -e $SHELL -c 'pacman -Qu | less'
+click-left = kitty -e $SHELL -c 'yay -Syu'
+click-right = bspc rule -a * -o state=floating ; sleep 0.015 ; kitty -e $SHELL -c 'pacman -Qu | less'
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

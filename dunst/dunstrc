@@ -20,7 +20,7 @@ font = Inconsolata Bold 10
 
 line_height = 0
 markup = full
-format = "<span size='x-large' font_desc='Inconsolata 11' weight='bold' foreground='#FA5AA4'>%s</span>\n\n%b"
+format = "<span size='x-large' font_desc='Inconsolata 11' weight='bold' foreground='#c394b4'>%s</span>\n\n%b"
 alignment = center
 
 idle_threshold = 120
@@ -57,14 +57,14 @@ context = ctrl+shift+period
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#2E3440"
     foreground = "#D8DEE9"
-    timeout = 5 
+    timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_normal]
     background = "#2E3440"
     foreground = "#D8DEE9"
-    timeout = 5
+    timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
